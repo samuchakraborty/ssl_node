@@ -1,0 +1,7 @@
+## for creating key
+# openssl genrsa -out key.pem
+## for creating csr file
+# openssl genrsa -out key.pem
+
+## for generate ssl certificate
+# openssl x509 -req -days 399 -in csr.pem -signkey key.pem -out cert.pem
